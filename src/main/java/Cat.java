@@ -1,11 +1,23 @@
 public class Cat extends Animal {
 
-    public Cat(String name, int age) {
-        super(name, age);
+    // setter funct
+    public void setName(String name) {
+        this.name = name;
     }
 
-    @Override
-    public void play() {
-        System.out.println("Cat " + name + " jumps on table");
+    public String getName() {
+        return name;
+    }
+
+    // contructor
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
+        // v just means calls the constructor, whatever it is
+        // super(name, age);
+    }
+
+    public void play(Toy toy) {
+        System.out.println("CAT " + name + " jumps on the table.");
     }
 }
