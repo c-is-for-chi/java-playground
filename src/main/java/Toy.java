@@ -1,17 +1,12 @@
 public class Toy implements Action {
-    private String name;
+    private String brand;
 
-    public Toy(String name) {
-        this.name = name;
+    public Toy(String brand) {
+        this.brand = brand;
     }
 
-    @Override
-    public void play() {
-        System.out.println("Robot " + name + " is trying to stand up");
-    }
-
-    @Override
-    public String toString() {
-        return name;
+    public void play(Toy toy) {
+        // System.out.println("TOY of brand " + brand + " is making some sound...");
+        System.out.println("TOY of brand " + brand + " is making some kind of weird noise...");
     }
 }
